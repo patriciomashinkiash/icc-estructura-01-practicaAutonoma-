@@ -66,11 +66,11 @@ public class App {
         java.util.Arrays.toString(arregloInsercionOrdenado1));
 
         // // Metodo insercionSegundo
-        // int[] arregloInsercionOrdenado2 =
-        // ordenador.insercionSegundo(arregloInsercion);
-        // System.out.println(
-        // "Resultado insercion Metodo 2: " +
-        // java.util.Arrays.toString(arregloInsercionOrdenado2));
+        int[] arregloInsercionOrdenado2 =
+        ordenador.insercionSegundo(arregloInsercion);
+        System.out.println(
+        "Resultado insercion Metodo 2: " +
+        java.util.Arrays.toString(arregloInsercionOrdenado2));
 
         // // Metodo insercionTercero
         // int[] arregloInsercionOrdenado3 =

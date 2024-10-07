@@ -143,6 +143,8 @@ public class MetodosOrdenamiento {
 
     // Método de inserción con errores
     // Error encontrado:
+    
+    
     public int[] insercionPrimero(int[] arregloOriginal) {
 
         int[] arreglo = Arrays.copyOf(arregloOriginal, arregloOriginal.length);
@@ -150,7 +152,7 @@ public class MetodosOrdenamiento {
             int key = arreglo[j];
             int i = j - 1;
 
-            while (i > 0 && arreglo[i] < key) {
+            while (i >= 0 && arreglo[i] < key) {
                 arreglo[i + 1] = arreglo[i];
                 i--;
             }
@@ -167,11 +169,12 @@ public class MetodosOrdenamiento {
         for (int j = 1; j < arreglo.length; j++) {
             int actual = arreglo[j];
 
-            int i = j - 1;
-            for (; j >= 0 && arreglo[j] > actual; j--) {
+            int i =j;
+            for (; j >= 0 && arreglo[i-1] > actual; j--) {
                 arreglo[j + 1] = arreglo[j];
+                i--;
             }
-            arreglo[i + 1] = actual;
+            arreglo[i] = actual;
         }
         return arreglo;
     }
